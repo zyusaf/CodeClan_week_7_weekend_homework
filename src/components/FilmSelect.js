@@ -10,10 +10,12 @@ const FilmSelector = ({films, onFilmSelected}) => {
     });
 
     return(
-        <select defaultValue="" onChange={handleChangeFilm}>
-            <option value="">Choose a Film</option>
-            {filmOptions}
-        </select>
+        <section>
+            <select defaultValue="" onChange={handleChangeFilm}>
+                <option value="">Choose a Film</option>
+                {filmOptions}
+            </select>
+        </section>
     )
 }
 
